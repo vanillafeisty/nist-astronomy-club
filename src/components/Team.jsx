@@ -30,7 +30,7 @@ function LeaderCard({ name, role, badge, dept, bio, color }) {
       <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginBottom: 20 }}>{bio}</p>
       <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
         {['fa-linkedin', 'fa-instagram', 'fa-envelope'].map(ic => (
-          <a key={ic} href="#" style={{
+          <button key={ic} onClick={() => {}} style={{
             width: 34, height: 34, borderRadius: '50%',
             background: 'var(--bg2)', border: '1px solid var(--border)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -39,7 +39,7 @@ function LeaderCard({ name, role, badge, dept, bio, color }) {
             onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.color = 'var(--accent2)'; }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--muted)'; }}>
             <i className={`fab ${ic}`} />
-          </a>
+          </button>
         ))}
       </div>
     </div>
