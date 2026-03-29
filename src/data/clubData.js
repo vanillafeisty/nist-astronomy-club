@@ -1,0 +1,130 @@
+// src/data/clubData.js
+
+export const coreMembers = [
+  { name: "Arjun Sahoo", role: "Tech Lead", dept: "B.Tech CSE", icon: "👨‍🚀" },
+  { name: "Meera Patra", role: "Observation Head", dept: "B.Sc Physics", icon: "👩‍🔬" },
+  { name: "Vikram Rath", role: "Photo Lead", dept: "B.Tech ECE", icon: "🔭" },
+  { name: "Pooja Das", role: "Events Head", dept: "B.Tech IT", icon: "🌙" },
+  { name: "Siddharth Nayak", role: "Content Lead", dept: "B.Tech Mech", icon: "⭐" },
+  { name: "Ananya Mohanty", role: "Design Head", dept: "B.Sc Physics", icon: "🚀" },
+  { name: "Rahul Kumar", role: "Research Head", dept: "B.Tech CSE", icon: "🪐" },
+  { name: "Sunita Biswal", role: "Outreach Lead", dept: "MBA", icon: "🌌" },
+  { name: "Debasish Panda", role: "Core Member", dept: "B.Tech EEE", icon: "☀️" },
+  { name: "Priyanka Swain", role: "Core Member", dept: "B.Tech CSE", icon: "🌠" },
+  { name: "Abhishek Jena", role: "Core Member", dept: "B.Sc Physics", icon: "📸" },
+  { name: "Ritika Kar", role: "Core Member", dept: "MCA", icon: "🔭" },
+  { name: "Saurav Behera", role: "Core Member", dept: "B.Tech Mech", icon: "🌙" },
+  { name: "Tanmaya Mishra", role: "Core Member", dept: "B.Tech ECE", icon: "⭐" },
+  { name: "Kavya Tripathy", role: "Core Member", dept: "B.Sc Physics", icon: "🚀" },
+  { name: "Harsh Nanda", role: "Core Member", dept: "B.Tech CSE", icon: "🪐" },
+  { name: "Nibedita Sahu", role: "Core Member", dept: "B.Tech IT", icon: "🌌" },
+  { name: "Sourav Mohanta", role: "Core Member", dept: "B.Tech EEE", icon: "👨‍🚀" },
+  { name: "Lipsa Pradhan", role: "Core Member", dept: "B.Sc Physics", icon: "👩‍🔬" },
+  { name: "Rohit Dash", role: "Core Member", dept: "B.Tech Mech", icon: "☀️" },
+  { name: "Smruti Panigrahi", role: "Core Member", dept: "MCA", icon: "🌠" },
+  { name: "Nikhil Rout", role: "Core Member", dept: "B.Tech CSE", icon: "📸" },
+  { name: "Ayesha Fatima", role: "Core Member", dept: "M.Sc Physics", icon: "🔭" },
+  { name: "Prasanta Sethi", role: "Core Member", dept: "B.Tech ECE", icon: "🌙" },
+  { name: "Deepika Choudhury", role: "Core Member", dept: "B.Tech IT", icon: "⭐" },
+  { name: "Mayur Patel", role: "Core Member", dept: "B.Tech CSE", icon: "🚀" },
+  { name: "Sarita Behera", role: "Core Member", dept: "B.Sc Physics", icon: "🪐" },
+  { name: "Ankush Soren", role: "Core Member", dept: "B.Tech Mech", icon: "🌌" },
+  { name: "Ishita Ray", role: "Core Member", dept: "M.Sc Physics", icon: "👩‍🔬" },
+  { name: "Subhrajit Das", role: "Core Member", dept: "B.Tech ECE", icon: "☀️" },
+];
+
+export const alumni = [
+  {
+    name: "Aditya Mishra",
+    batch: "B.Tech CSE, 2020",
+    role: "Data Scientist, ISRO",
+    message: "Being part of the NIST Astronomy Club changed the way I see the universe — and my career. The hands-on sessions with telescopes and astrophotography gave me skills no classroom could. I owe a huge part of my journey to the curiosity this club sparked in me.",
+  },
+  {
+    name: "Priya Nanda",
+    batch: "B.Sc Physics, 2021",
+    role: "M.Sc Astrophysics, Pune University",
+    message: "The workshops by visiting professors were truly eye-opening. The foundation built at NIST Astronomy Club was invaluable for my postgraduate journey. Keep gazing skyward, juniors!",
+  },
+  {
+    name: "Rajat Kumar Panda",
+    batch: "B.Tech ECE, 2019",
+    role: "Research Scholar, IIT Bombay",
+    message: "I joined as a shy freshman who barely knew a constellation. By my final year, I had co-authored a paper on meteor flux observation and led a team of 15. The club is where I became a researcher and a dreamer with direction.",
+  },
+  {
+    name: "Sneha Mohapatra",
+    batch: "B.Tech Mech, 2022",
+    role: "Aerospace Engineer, USA",
+    message: "Seeing Saturn's rings for the first time through our club telescope was a life-changing moment. The club nurtured my love for space science and helped me land a role at a SpaceX contractor team.",
+  },
+  {
+    name: "Debasis Sahu",
+    batch: "B.Tech IT, 2021",
+    role: "Product Manager, Bengaluru",
+    message: "What I treasure most is the club's spirit of inclusion. You didn't need to be a physics genius — just passionate. The project expos taught me how to present ideas and iterate. Skills that serve me daily.",
+  },
+];
+
+export const events = [
+  {
+    icon: "📸",
+    tag: "Flagship Event",
+    title: "Astrophotography Championship",
+    desc: "Our annual astrophotography contest invites members to capture the most stunning deep-sky objects, planetary surfaces, and Milky Way panoramas using club equipment. Winners are featured in the NIST Science Gallery.",
+    features: ["Guided sessions with senior members", "Image stacking & post-processing workshops", "Prizes and certificates for top entries"],
+    color: "#0d1b2a",
+    accent: "#4fc3f7",
+  },
+  {
+    icon: "🌙",
+    tag: "Monthly",
+    title: "Night Sky & Telescope Observations",
+    desc: "Every new-moon night, members gather at the NIST rooftop observatory to observe celestial objects through our telescopes. Moon shots, planetary rings, and deep-sky objects are all on the menu.",
+    features: ["High-resolution moon photography sessions", "Saturn's rings and Jupiter's moons live views", "Meteor shower watch parties"],
+    color: "#040811",
+    accent: "#a78bfa",
+  },
+  {
+    icon: "🎓",
+    tag: "Quarterly",
+    title: "Workshops & Distinguished Lectures",
+    desc: "We regularly host eminent professors, researchers, and alumni who deliver talks on cutting-edge topics in astrophysics, space missions, and cosmology. Open to all NIST students.",
+    features: ["Guest lectures by IIT/ISRO scientists", "Python-for-astronomy coding workshops", "Q&A with space industry professionals"],
+    color: "#0a1628",
+    accent: "#f5a623",
+  },
+  {
+    icon: "🚀",
+    tag: "Ongoing",
+    title: "Build. Learn. Launch. — Projects Expo",
+    desc: "Members conceptualize, build, and present their own astronomy-related projects. From DIY radio telescopes to star-tracking Arduino rigs, the possibilities are endless.",
+    features: ["Funded project support for selected proposals", "Mentorship from faculty advisors", "Annual Projects Expo and demonstrations"],
+    color: "#0d1f0d",
+    accent: "#81c784",
+  },
+];
+
+export const whyJoin = [
+  { icon: "🔭", title: "Hands-On Telescope Access", desc: "Get exclusive hands-on time with our telescopes. Learn to locate, track, and photograph celestial objects including planets, nebulae, and star clusters." },
+  { icon: "📸", title: "Astrophotography Skills", desc: "Master the art of capturing the night sky. From long-exposure photography to image stacking, develop skills that blend science and creativity." },
+  { icon: "🌙", title: "Night Sky Observations", desc: "Join our monthly stargazing nights from Pallur Hills. Experience meteor showers, lunar eclipses, and planetary alignments." },
+  { icon: "🎓", title: "Expert-Led Workshops", desc: "Attend sessions conducted by distinguished professors, astronomers, and researchers. Learn from the best minds in astrophysics." },
+  { icon: "🛰️", title: "Real Research Projects", desc: "Build and launch your own astronomy projects. From radio telescopes to solar observation rigs, we support student-led innovation." },
+  { icon: "🤝", title: "Community & Network", desc: "Connect with a passionate community of space lovers, alumni astronomers, and faculty mentors. Your network is as vast as the cosmos." },
+];
+
+export const learnings = [
+  { icon: "fa-star", text: "Stellar classification & stellar evolution" },
+  { icon: "fa-moon", text: "Lunar and planetary observation techniques" },
+  { icon: "fa-sun", text: "Solar observation and sunspot tracking" },
+  { icon: "fa-camera", text: "Deep-sky astrophotography & image processing" },
+  { icon: "fa-satellite", text: "Satellite tracking and orbital mechanics" },
+  { icon: "fa-chart-line", text: "Data analysis for astronomical observation" },
+  { icon: "fa-tools", text: "Telescope assembly, alignment & maintenance" },
+  { icon: "fa-rocket", text: "Space mission design fundamentals" },
+  { icon: "fa-code", text: "Python for astronomy & data visualization" },
+  { icon: "fa-broadcast-tower", text: "Radio astronomy basics" },
+  { icon: "fa-globe", text: "Cosmology and large-scale universe structure" },
+  { icon: "fa-meteor", text: "Meteor observation and recording" },
+];
