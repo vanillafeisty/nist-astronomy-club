@@ -77,7 +77,7 @@ export default function Gallery() {
                 onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
                 onClick={() => src && setLightbox(src)}>
                 {src
-                  ? <img src={src} alt={`Club photo ${i + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  ? <img src={src} alt={`NIST Astronomy Club — ${i + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   : (
                     <div style={{
                       width: '100%', height: '100%',
