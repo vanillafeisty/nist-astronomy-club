@@ -1,23 +1,23 @@
-// src/firebase.js
-// ============================================================
-//  STEP 1: Go to https://console.firebase.google.com
-//  STEP 2: Create a project → Add a Web App
-//  STEP 3: Copy your firebaseConfig object and paste it below
-//  STEP 4: Enable Firestore → Build → Firestore Database → Start in Test Mode
-// ============================================================
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBgeTiuAJMFuOfjagGNnk3ozcYWzeqAMxU",
+    authDomain: "nist-astronomy-club.firebaseapp.com",
+    projectId: "nist-astronomy-club",
+    storageBucket: "nist-astronomy-club.firebasestorage.app",
+    messagingSenderId: "967539338705",
+    appId: "1:967539338705:web:2ef2b958510f70ae4704f0",
+    measurementId: "G-0KZWVY9Z74"
+  };
 
-// 🔴 REPLACE THIS with your own Firebase config
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
