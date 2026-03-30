@@ -1,7 +1,7 @@
 // src/data/clubData.js
 
 export const coreMembers = [
-  { name: "Subhasis Patro", role: "Secretary", dept: "B.Tech EEE", image: },
+  { name: "Subhasis Patro", role: "Secretary", dept: "B.Tech EEE", image: "/subhasis.jpeg" },
   { name: "Rakesh Raulo", role: "Core Member", dept: "B.Tech IT", },
   { name: "Barsa Rani Tripathy, role: "Core Member", dept: "B.Tech CSE", },
   { name: "G Sai Akshata", role: "Treasurer", dept: "B.Tech IT",},
