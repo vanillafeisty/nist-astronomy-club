@@ -1,8 +1,8 @@
 // src/data/clubData.js
 
 export const coreMembers = [
-  { name: "Arjun Sahoo", role: "Tech Lead", dept: "B.Tech CSE", icon: "👨‍🚀" },
-  { name: "Meera Patra", role: "Observation Head", dept: "B.Sc Physics", icon: "👩‍🔬" },
+  { name: "Subhasis Patro", role: "Secretary", dept: "B.Tech EEE", image: },
+  { name: "Rakesh Raulo", role: "Core Member", dept: "B.Tech IT", },
   { name: "Vikram Rath", role: "Photo Lead", dept: "B.Tech ECE", icon: "🔭" },
   { name: "Pooja Das", role: "Events Head", dept: "B.Tech IT", icon: "🌙" },
   { name: "Siddharth Nayak", role: "Content Lead", dept: "B.Tech Mech", icon: "⭐" },
