@@ -32,6 +32,7 @@ Since 2018, we have been bringing the universe closer to students across all dep
 | | Feature |
 |---|---|
 | 🎨 | Deep-space themed UI with animated star field |
+| 📸 | 50-slot drag & drop photo gallery |
 | 📝 | Full membership application questionnaire |
 | ✉️ | Contact form with real-time message storage |
 | 🔥 | Firebase Firestore database — permanent storage |
