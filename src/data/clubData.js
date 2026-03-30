@@ -1,10 +1,10 @@
 // src/data/clubData.js
 
 export const coreMembers = [
-  { name: "Subhasis Patro", role: "Secretary", dept: "B.Tech EEE", image: "/subhasis.jpeg" },
-  { name: "Rakesh Raulo", role: "Core Member", dept: "B.Tech IT", },
-  { name: "Barsa Rani Tripathy, role: "Core Member", dept: "B.Tech CSE", },
-  { name: "G Sai Akshata", role: "Treasurer", dept: "B.Tech IT",},
+  { name: "Arjun Sahoo", role: " Tech Lead", dept: "B.Tech CSE", icon: "👨‍🚀" },
+  { name: "Meera Patra", role: " Observation Head", dept: "B.Sc Physics", icon: "👩‍🔬" },
+  { name: "Vikram Rath", role: " Photo Lead", dept: "B.Tech ECE", icon: "🔭" },
+  { name: "Pooja Das", role: " Events Lead", dept: "B.Tech IT", icon: "🌙" },
   { name: "Siddharth Nayak", role: "Content Lead", dept: "B.Tech Mech", icon: "⭐" },
   { name: "Ananya Mohanty", role: "Design Head", dept: "B.Sc Physics", icon: "🚀" },
   { name: "Rahul Kumar", role: "Research Head", dept: "B.Tech CSE", icon: "🪐" },
