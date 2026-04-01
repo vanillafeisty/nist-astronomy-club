@@ -56,18 +56,18 @@ export default function Team() {
         {/* Leaders */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 80 }} className="leaders-grid">
           <LeaderCard
-            name="[ President's Name ]"
+            name="[ Sasanka Sekhar ]"
             role="Club President"
             badge="👑"
-            dept="Department of Physics / Electronics"
+            dept="Department of Computer Science"
             bio="Leading the club with a vision to make astronomy accessible to every NISTian. Passionate about deep-sky observation and astrophotography."
             color="#f5a623"
           />
           <LeaderCard
-            name="[ Secretary's Name ]"
+            name="[ Subhasis Patro ]"
             role="Club Secretary"
             badge="⭐"
-            dept="Department of Computer Science / Physics"
+            dept="Department of Computer Science"
             bio="Organizing events, workshops, and outreach with dedication. Enthusiastic about radio astronomy and Python-based sky analysis."
             color="#4fc3f7"
           />
@@ -91,11 +91,15 @@ export default function Team() {
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
               <div style={{
-                width: 50, height: 50, borderRadius: '50%',
-                background: 'var(--bg2)', border: '1.5px solid rgba(79,195,247,0.2)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '1.4rem', margin: '0 auto 10px',
-              }}>{m.icon}</div>
+  width: 60, height: 60, borderRadius: '50%',
+  overflow: 'hidden', margin: '0 auto 10px',
+  border: '2px solid rgba(79,195,247,0.3)',
+}}>
+  {m.photo
+    ? <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    : <div style={{ width: '100%', height: '100%', background: 'var(--bg2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>{m.icon || '👤'}</div>
+  }
+</div>
               <div style={{ fontWeight: 600, fontSize: '0.78rem', marginBottom: 3 }}>{m.name}</div>
               <div style={{ fontSize: '0.68rem', color: 'var(--muted)' }}>{m.role}</div>
               <div style={{ fontSize: '0.62rem', color: 'var(--accent2)', marginTop: 3 }}>{m.dept}</div>
