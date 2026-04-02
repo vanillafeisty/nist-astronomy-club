@@ -7,7 +7,7 @@ import React, { useState, useRef } from 'react';
 // 3. Add it to the `galleryPhotos` array with a caption
 // ============================================================
 
-import img2            from '../images/gallery/xyz.jpg';
+
 import imgAstroFest2   from '../images/gallery/astro fest 2.jpg';
 import imgAstroFest3   from '../images/gallery/astro fest 3.jpg';
 import imgAstroFest4   from '../images/gallery/astro fest 4.jpg';
@@ -62,7 +62,7 @@ const galleryPhotos = [
   { src: imgOrientation6, caption: 'Orientation — 6',              category: 'Orientation' },
   { src: imgOrientation7, caption: 'Orientation — 7',              category: 'Orientation' },
   { src: imgExplaining,   caption: 'Explaining to School Children',category: 'Outreach' },
-  { src: img2,            caption: 'Club Activity',                category: 'Others' },
+
 ];
 
 const categories = ['All', ...Array.from(new Set(galleryPhotos.map(p => p.category)))];
