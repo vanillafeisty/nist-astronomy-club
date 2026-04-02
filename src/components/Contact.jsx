@@ -3,8 +3,8 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase';
 
 const socials = [
-  { icon: 'fab fa-instagram', label: 'Instagram', color: '#e1306c', url: 'https://www.instagram.com/' },
-  { icon: 'fab fa-facebook', label: 'Facebook', color: '#1877f2', url: 'https://www.facebook.com/' },
+  { icon: 'fab fa-instagram', label: 'Instagram', color: '#e1306c', url: 'https://www.instagram.com/nistastronomyclub/' },
+  { icon: 'fab fa-facebook', label: 'Facebook', color: '#1877f2', url: 'https://www.facebook.com/astronomyclub/' },
   { icon: 'fab fa-x-twitter', label: 'X / Twitter', color: '#1da1f2', url: 'https://twitter.com/' },
   { icon: 'fab fa-youtube', label: 'YouTube', color: '#ff0000', url: 'https://www.youtube.com/' },
   { icon: 'fab fa-linkedin', label: 'LinkedIn', color: '#0a66c2', url: 'https://www.linkedin.com/' },
@@ -59,7 +59,7 @@ export default function Contact() {
             {[
               { icon: 'fa-map-marker-alt', label: 'Find Us', value: 'NIST University, Institute Park\nPallur Hills, Berhampur, Odisha — 761008' },
               { icon: 'fa-envelope', label: 'Email', value: 'astronomyclub@nist.edu\nhello@nist.edu (University)' },
-              { icon: 'fa-phone', label: 'Phone', value: '0680 3925403\n+91 72053 26478' },
+              { icon: 'fa-phone', label: 'Phone', value: '6371087577\n+91 8249255700' },
             ].map(c => (
               <div key={c.label} style={{
                 display: 'flex', alignItems: 'flex-start', gap: 16,
@@ -87,9 +87,7 @@ export default function Contact() {
 
             {/* Social Media */}
             <h4 style={{ fontFamily: 'Orbitron, monospace', fontSize: '0.88rem', marginBottom: 8 }}>Follow Us</h4>
-            <p style={{ color: 'var(--muted)', fontSize: '0.8rem', marginBottom: 14 }}>
-              Update links in <code style={{ background: 'var(--card)', padding: '2px 6px', borderRadius: 4, fontSize: '0.75rem' }}>src/components/Contact.jsx</code>
-            </p>
+            
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
               {socials.map(s => (
                 <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" style={{
