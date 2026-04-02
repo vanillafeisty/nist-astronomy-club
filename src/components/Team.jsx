@@ -1,10 +1,7 @@
 import React from 'react';
 import { coreMembers } from '../data/clubData';
-// Add these imports at the very top of Team.jsx
-import sasankaPhoto from '../images/members/sasanka.jpeg';
-import subhasisPhoto from '../images/members/subhasis.jpeg';
 
-function LeaderCard({ name, role, badge, dept, bio, color }) {
+function LeaderCard({ name, role, badge, dept, bio, color, photo }) {
   return (
     <div style={{
       background: 'var(--card)', border: `1px solid ${color}40`,
@@ -14,14 +11,22 @@ function LeaderCard({ name, role, badge, dept, bio, color }) {
     }}
       onMouseEnter={e => { e.currentTarget.style.borderColor = color; e.currentTarget.style.transform = 'translateY(-4px)'; }}
       onMouseLeave={e => { e.currentTarget.style.borderColor = `${color}40`; e.currentTarget.style.transform = 'translateY(0)'; }}>
+
       <div style={{ position: 'absolute', top: 18, right: 18, fontSize: '1.5rem' }}>{badge}</div>
+
+      {/* ✅ Photo — uses the photo prop correctly */}
       <div style={{
-        width: 96, height: 96,
-        background: `linear-gradient(135deg, var(--bg2), var(--card))`,
-        border: `2px solid ${color}`, borderRadius: '50%',
+        width: 110, height: 110, borderRadius: '50%',
+        border: `3px solid ${color}`, overflow: 'hidden',
+        margin: '0 auto 18px', background: 'var(--bg2)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontSize: '2.4rem', margin: '0 auto 18px',
-      }}>👨‍🚀</div>
+      }}>
+        {photo
+          ? <img src={photo} alt={name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+          : <span style={{ fontSize: '2.8rem' }}>👨‍🚀</span>
+        }
+      </div>
+
       <h3 style={{ fontFamily: 'Orbitron, monospace', fontSize: '1.05rem', marginBottom: 8 }}>{name}</h3>
       <div style={{
         display: 'inline-block',
@@ -37,7 +42,7 @@ function LeaderCard({ name, role, badge, dept, bio, color }) {
             width: 34, height: 34, borderRadius: '50%',
             background: 'var(--bg2)', border: '1px solid var(--border)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            color: 'var(--muted)', fontSize: '0.85rem', transition: 'all 0.2s',
+            color: 'var(--muted)', fontSize: '0.85rem', transition: 'all 0.2s', cursor: 'pointer',
           }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.color = 'var(--accent2)'; }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--muted)'; }}>
@@ -56,20 +61,22 @@ export default function Team() {
         <div className="section-label">Leadership</div>
         <h2 className="section-title">Meet the <span className="highlight">Team</span></h2>
 
-        {/* Leaders */}
+        {/* Leaders — just change the filename in require() if needed */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 80 }} className="leaders-grid">
           <LeaderCard
-            name="[ Sasanka Sekhar ]"
+            name="Sasanka Sekhar"
             role="Club President"
-            photo={sasankaPhoto}
+            badge="👑"
+            photo={require('../images/members/sasanka.jpeg')}
             dept="Department of Computer Science"
             bio="Leading the club with a vision to make astronomy accessible to every NISTian. Passionate about deep-sky observation and astrophotography."
             color="#f5a623"
           />
           <LeaderCard
-            name="[ Subhasis Patro ]"
+            name="Subhasis Patro"
             role="Club Secretary"
-            photo={subhasisPhoto}
+            badge="⭐"
+            photo={require('../images/members/subhasis.jpeg')}
             dept="Department of Computer Science"
             bio="Organizing events, workshops, and outreach with dedication. Enthusiastic about radio astronomy and Python-based sky analysis."
             color="#4fc3f7"
@@ -94,15 +101,17 @@ export default function Team() {
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
               <div style={{
-  width: 60, height: 60, borderRadius: '50%',
-  overflow: 'hidden', margin: '0 auto 10px',
-  border: '2px solid rgba(79,195,247,0.3)',
-}}>
-  {m.photo
-    ? <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-    : <div style={{ width: '100%', height: '100%', background: 'var(--bg2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>{m.icon || '👤'}</div>
-  }
-</div>
+                width: 56, height: 56, borderRadius: '50%',
+                overflow: 'hidden', margin: '0 auto 10px',
+                border: '1.5px solid rgba(79,195,247,0.2)',
+                background: 'var(--bg2)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
+                {m.photo
+                  ? <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  : <span style={{ fontSize: '1.4rem' }}>{m.icon || '👤'}</span>
+                }
+              </div>
               <div style={{ fontWeight: 600, fontSize: '0.78rem', marginBottom: 3 }}>{m.name}</div>
               <div style={{ fontSize: '0.68rem', color: 'var(--muted)' }}>{m.role}</div>
               <div style={{ fontSize: '0.62rem', color: 'var(--accent2)', marginTop: 3 }}>{m.dept}</div>
