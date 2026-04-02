@@ -7,7 +7,7 @@ import React, { useState, useRef } from 'react';
 // 3. Add it to the `galleryPhotos` array with a caption
 // ============================================================
 
-import img2            from '../images/gallery/2.jpg';
+import img2            from '../images/gallery/xyz.jpg';
 import imgAstroFest2   from '../images/gallery/astro fest 2.jpg';
 import imgAstroFest3   from '../images/gallery/astro fest 3.jpg';
 import imgAstroFest4   from '../images/gallery/astro fest 4.jpg';
