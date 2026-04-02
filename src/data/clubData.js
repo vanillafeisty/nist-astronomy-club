@@ -28,7 +28,7 @@ export const coreMembers = [
   { name: "Akshata", role: "Treasurer",  photo: require('../images/members/akshata.jpeg') },
   { name: "Alisha", role: "Core Member",  photo: require('../images/members/alisha.jpeg') },
 
-  { name: "Anshuman", role: "Core Member",  photo: require('../images/members/anshuman.jpeg') },
+  { name: "Anshuman", role: "Core Member",  photo: require('../images/members/anshuman.jpg') },
   { name: "Arpan", role: "Core Member",  photo: require('../images/members/Arpan.jpeg') },
   { name: "Kamal", role: "Core Member",  photo: require('../images/members/Kamal.jpg') },
   { name: "Tanisha", role: "Core Member",  photo: require('../images/members/Tanisha.jpeg') },
