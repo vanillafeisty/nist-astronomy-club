@@ -1,5 +1,8 @@
 import React from 'react';
 import { coreMembers } from '../data/clubData';
+// Add these imports at the very top of Team.jsx
+import sasankaPhoto from '../images/members/sasanka.jpeg';
+import subhasisPhoto from '../images/members/subhasis.jpeg';
 
 function LeaderCard({ name, role, badge, dept, bio, color }) {
   return (
@@ -58,7 +61,7 @@ export default function Team() {
           <LeaderCard
             name="[ Sasanka Sekhar ]"
             role="Club President"
-            badge="👑"
+            photo={sasankaPhoto}
             dept="Department of Computer Science"
             bio="Leading the club with a vision to make astronomy accessible to every NISTian. Passionate about deep-sky observation and astrophotography."
             color="#f5a623"
@@ -66,7 +69,7 @@ export default function Team() {
           <LeaderCard
             name="[ Subhasis Patro ]"
             role="Club Secretary"
-            badge="⭐"
+            photo={subhasisPhoto}
             dept="Department of Computer Science"
             bio="Organizing events, workshops, and outreach with dedication. Enthusiastic about radio astronomy and Python-based sky analysis."
             color="#4fc3f7"
