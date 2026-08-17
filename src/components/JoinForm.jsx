@@ -253,7 +253,7 @@ export default function JoinForm() {
 
           <div style={{marginTop:40, paddingTop:28, borderTop:'1px solid var(--border)', display:'flex', flexDirection:'column', alignItems:'center', gap:16}}>
             <p style={{fontSize:'0.82rem', color:'var(--muted)', display:'flex', alignItems:'center', gap:6}}>
-              <i className="fas fa-database" style={{color:'var(--accent2)'}}/> Securely saved to Firebase database
+              <i className="fas fa-database" style={{color:'var(--accent2)'}}/> We've received your information.
             </p>
             <button type="submit" className="btn-primary" disabled={loading} style={{fontSize:13, padding:'16px 48px', opacity:loading?0.7:1}}>
               {loading ? <><i className="fas fa-spinner fa-spin"/> Saving...</> : <><i className="fas fa-paper-plane"/> Submit Application</>}
