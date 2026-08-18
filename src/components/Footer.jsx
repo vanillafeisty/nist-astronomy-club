@@ -31,11 +31,9 @@ export default function Footer({ onAdminClick }) {
             </p>
             <div style={{ display: 'flex', gap: 10 }}>
               {[
-                { icon: 'fab fa-instagram', url: '#' },
+                { icon: 'fab fa-instagram', url: 'https://www.instagram.com/nistastronomyclub?igsh=MW40ZDZqa243ZnBrYw==' },
                 { icon: 'fab fa-facebook', url: '#' },
-                { icon: 'fab fa-x-twitter', url: '#' },
-                { icon: 'fab fa-youtube', url: '#' },
-                { icon: 'fab fa-discord', url: '#' },
+              
               ].map((s, i) => (
                 <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{
                   width: 36, height: 36, borderRadius: '50%',

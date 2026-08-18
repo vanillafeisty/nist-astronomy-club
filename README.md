@@ -13,7 +13,7 @@
 
 > *"Where Science Meets the Sky — Exploring the Cosmos from Pallur Hills, Berhampur"*
 
-**[🌐 Live Website](https://nist-astronomy-club.vercel.app)** &nbsp;·&nbsp; **[🏫 NIST University](https://www.nist.edu/)** &nbsp;·&nbsp; **[📸 Instagram](#)** &nbsp;·&nbsp; **[💬 Discord](#)**
+**[🌐 Live Website](https://nist-astronomy-club.vercel.app)** &nbsp;·&nbsp; **[🏫 NIST University](https://www.nist.edu/)** &nbsp;·&nbsp; **[📸 Instagram](https://www.instagram.com/nistastronomyclub?igsh=MW40ZDZqa243ZnBrYw==)** &nbsp;·&nbsp; **[💬 Discord](#)**
 
 </div>
 
