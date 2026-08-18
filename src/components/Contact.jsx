@@ -5,10 +5,7 @@ import { db } from '../firebase';
 const socials = [
   { icon: 'fab fa-instagram', label: 'Instagram', color: '#e1306c', url: 'https://www.instagram.com/nistastronomyclub/' },
   { icon: 'fab fa-facebook', label: 'Facebook', color: '#1877f2', url: 'https://www.facebook.com/astronomyclub/' },
-  { icon: 'fab fa-x-twitter', label: 'X / Twitter', color: '#1da1f2', url: 'https://twitter.com/' },
-  { icon: 'fab fa-youtube', label: 'YouTube', color: '#ff0000', url: 'https://www.youtube.com/' },
-  { icon: 'fab fa-linkedin', label: 'LinkedIn', color: '#0a66c2', url: 'https://www.linkedin.com/' },
-  { icon: 'fab fa-discord', label: 'Discord', color: '#7289da', url: 'https://discord.gg/' },
+ 
 ];
 
 const initMsg = { name: '', email: '', phone: '', subject: '', message: '' };
