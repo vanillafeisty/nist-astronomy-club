@@ -77,7 +77,7 @@ export default function Team() {
             role="Club Secretary"
             badge="⭐"
             photo={require('../images/members/Sambit.jpeg')}
-            dept="Department of Computer Science"
+            dept="Department of Electronics and Communication Engineering"
             bio="Organizing events, workshops, and outreach with dedication. Enthusiastic about radio astronomy and Python-based sky analysis."
             color="#4fc3f7"
           />
