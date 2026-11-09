@@ -64,7 +64,7 @@ export default function Team() {
         {/* Leaders — just change the filename in require() if needed */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 80 }} className="leaders-grid">
           <LeaderCard
-            name="Subhasis Patro"
+            name="Subhasis"
             role="Club President"
             badge="👑"
             photo={require('../images/members/subhasis.jpeg')}
@@ -73,7 +73,7 @@ export default function Team() {
             color="#f5a623"
           />
           <LeaderCard
-            name="Sambit Panda"
+            name="Sambit"
             role="Club Secretary"
             badge="⭐"
             photo={require('../images/members/Sambit.jpeg')}
