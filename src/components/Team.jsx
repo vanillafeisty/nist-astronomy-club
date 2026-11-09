@@ -68,7 +68,7 @@ export default function Team() {
             role="Club President"
             badge="👑"
             photo={require('../images/members/subhasis.jpeg')}
-            dept="Department of Computer Science"
+            dept="Department of Electrical and Electronics Engineering"
             bio="Leading the club with a vision to make astronomy accessible to every NISTian. Passionate about deep-sky observation and astrophotography."
             color="#f5a623"
           />
