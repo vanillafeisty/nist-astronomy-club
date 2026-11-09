@@ -64,19 +64,19 @@ export default function Team() {
         {/* Leaders — just change the filename in require() if needed */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 80 }} className="leaders-grid">
           <LeaderCard
-            name="Sasanka Sekhar"
+            name="Subhasis Patro"
             role="Club President"
             badge="👑"
-            photo={require('../images/members/sasanka.jpeg')}
+            photo={require('../images/members/subhasis.jpeg')}
             dept="Department of Computer Science"
             bio="Leading the club with a vision to make astronomy accessible to every NISTian. Passionate about deep-sky observation and astrophotography."
             color="#f5a623"
           />
           <LeaderCard
-            name="Subhasis Patro"
+            name="Sambit Panda"
             role="Club Secretary"
             badge="⭐"
-            photo={require('../images/members/subhasis.jpeg')}
+            photo={require('../images/members/Sambit.jpeg')}
             dept="Department of Computer Science"
             bio="Organizing events, workshops, and outreach with dedication. Enthusiastic about radio astronomy and Python-based sky analysis."
             color="#4fc3f7"
