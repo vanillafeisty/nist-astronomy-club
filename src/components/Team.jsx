@@ -84,7 +84,7 @@ export default function Team() {
         </div>
 
        
-        {/* Core Members */}
+         {/* Core Members */}
         <div style={{ marginBottom: 28 }}>
           <h3 style={{ fontFamily: 'Orbitron, monospace', fontSize: 'clamp(1.3rem,3vw,1.8rem)', fontWeight: 700, marginBottom: 8 }}>
             Core <span className="highlight">Members</span>
@@ -92,51 +92,40 @@ export default function Team() {
           <p style={{ color: 'var(--muted)' }}>The backbone of every observation night, workshop, and launch event.</p>
         </div>
 
-        {[
-          { batch: '2022–2026', members: coreMembers.slice(0, 13) },
-          { batch: '2023–2027', members: coreMembers.slice(13, 23) },
-          { batch: '2024–2028', members: coreMembers.slice(23, 34) },
-          { batch: '2025–2029', members: coreMembers.slice(34) },
-        ].map(group => (
-          <div key={group.batch} style={{ marginBottom: 45 }}>
-            <h3 style={{
-              fontFamily: 'Orbitron, monospace',
-              fontSize: '1.15rem',
-              marginBottom: 20,
-              color: 'var(--accent2)',
-            }}>
-              {group.batch} Batch
-            </h3>
-
-            <div
-              style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 14 }}
-              className="core-grid"
-            >
-              {group.members.map((m, i) => (
-                <div key={i} style={{
-                  background: 'var(--card)', border: '1px solid var(--border)',
-                  borderRadius: 'var(--radius)', padding: '18px 10px',
-                  textAlign: 'center', transition: 'border-color 0.3s, transform 0.3s',
-                }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-                  <div style={{
-                    width: 56, height: 56, borderRadius: '50%',
-                    overflow: 'hidden', margin: '0 auto 10px',
-                    border: '1.5px solid rgba(79,195,247,0.2)',
-                    background: 'var(--bg2)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  }}>
-                    {m.photo
-                      ? <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                      : <span style={{ fontSize: '1.4rem' }}>{m.icon || '👤'}</span>
-                    }
-                  </div>
-                  <div style={{ fontWeight: 600, fontSize: '0.78rem', marginBottom: 3 }}>{m.name}</div>
-                  <div style={{ fontSize: '0.68rem', color: 'var(--muted)' }}>{m.role}</div>
-                  <div style={{ fontSize: '0.62rem', color: 'var(--accent2)', marginTop: 3 }}>{m.dept}</div>
-                </div>
-              ))}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 14 }} className="core-grid">
+          {coreMembers.map((m, i) => (
+            <div key={i} style={{
+              background: 'var(--card)', border: '1px solid var(--border)',
+              borderRadius: 'var(--radius)', padding: '18px 10px',
+              textAlign: 'center', transition: 'border-color 0.3s, transform 0.3s',
+            }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+              <div style={{
+                width: 56, height: 56, borderRadius: '50%',
+                overflow: 'hidden', margin: '0 auto 10px',
+                border: '1.5px solid rgba(79,195,247,0.2)',
+                background: 'var(--bg2)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
+                {m.photo
+                  ? <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  : <span style={{ fontSize: '1.4rem' }}>{m.icon || '👤'}</span>
+                }
+              </div>
+              <div style={{ fontWeight: 600, fontSize: '0.78rem', marginBottom: 3 }}>{m.name}</div>
+              <div style={{ fontSize: '0.68rem', color: 'var(--muted)' }}>{m.role}</div>
+              <div style={{ fontSize: '0.62rem', color: 'var(--accent2)', marginTop: 3 }}>{m.dept}</div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        @media (max-width: 900px) { .leaders-grid { grid-template-columns: 1fr !important; } .core-grid { grid-template-columns: repeat(4,1fr) !important; } }
+        @media (max-width: 600px) { .core-grid { grid-template-columns: repeat(3,1fr) !important; } }
+        @media (max-width: 400px) { .core-grid { grid-template-columns: repeat(2,1fr) !important; } }
+      `}</style>
+    </section>
+  );
+}
