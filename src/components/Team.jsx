@@ -93,12 +93,16 @@ export default function Team() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 14 }} className="core-grid">
-          {coreMembers.map((m, i) => (
-            <div key={i} style={{
-              background: 'var(--card)', border: '1px solid var(--border)',
-              borderRadius: 'var(--radius)', padding: '18px 10px',
-              textAlign: 'center', transition: 'border-color 0.3s, transform 0.3s',
-            }}
+          {[
+  { batch: '2022–2026', members: coreMembers.slice(0, 13) },
+  { batch: '2023–2027', members: coreMembers.slice(13, 23) },
+  { batch: '2024–2028', members: coreMembers.slice(23, 34) },
+  { batch: '2025–2029', members: coreMembers.slice(34) },
+].map(group => (
+  <React.Fragment key={group.batch}>
+    <h3>{group.batch} Batch</h3>
+    <div className="core-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 14 }}>
+      {group.members.map((m, i) => (
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent2)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
               <div style={{
