@@ -1,11 +1,12 @@
 // src/data/clubData.js
 
 export const coreMembers = [
-  
-  { name: "Sasanka", role: "President", photo: require('../images/members/sasanka.jpeg') },
-  { name: "Sailesh", role: "Former Secretary", photo: require('../images/members/sailesh.jpeg') },
+
+  // 2022 - 2026 Batch
+  { name: "Sasanka", role: "Core Member", photo: require('../images/members/sasanka.jpeg') },
+  { name: "Sailesh", role: "Core member", photo: require('../images/members/sailesh.jpeg') },
   { name: "Suman", role: "Core Member",  photo: require('../images/members/suman.jpeg') },
-  { name: "Tamanna", role: "Former Treasurer",  photo: require('../images/members/tamanna.jpeg') },
+  { name: "Tamanna", role: "Core member",  photo: require('../images/members/tamanna.jpeg') },
   { name: "Sanjana", role: "Core Member",  photo: require('../images/members/sanjana.jpeg') },
   { name: "Sonal", role: "Core Member",  photo: require('../images/members/sonal.jpeg') },
   { name: "Pratyush", role: "Core Member",  photo: require('../images/members/pratyush.jpeg') },
@@ -16,31 +17,50 @@ export const coreMembers = [
   { name: "Devanshi", role: "Core Member",  photo: require('../images/members/devanshi.jpeg') },
   { name: "Bimal", role: "Core Member",  photo: require('../images/members/bimal.jpeg') },
   
-
-  { name: "Subhasis", role: "Secretary",  photo: require('../images/members/subhasis.jpeg') },
-  { name: "Gopal", role: "Event Head",  photo: require('../images/members/gopal.jpeg') },
+// 2023 - 2027 Batch
+  { name: "Subhasis", role: "President",  photo: require('../images/members/subhasis.jpeg') },
+  { name: "Gopal", role: "Vice President",  photo: require('../images/members/gopal.jpeg') },
   { name: "Alok", role: "Core Member",  photo: require('../images/members/alok.jpeg') },
   { name: "Amrit", role: "Core Member",  photo: require('../images/members/amrit.jpeg') },
   { name: "Sohan", role: "Core Member",  photo: require('../images/members/sohan.jpeg') },
   { name: "Rakesh", role: "Core Member",  photo: require('../images/members/rakesh.jpeg') },
-  { name: "Shyam", role: "Project Head",  photo: require('../images/members/shyam.jpeg') },
+  { name: "Shyam", role: "Core Member",  photo: require('../images/members/shyam.jpeg') },
   { name: "Barsa", role: "Core Member",  photo: require('../images/members/barsa.jpeg') },
-  { name: "Akshata", role: "Treasurer",  photo: require('../images/members/akshata.jpeg') },
+  { name: "Akshata", role: "Social Media Head",  photo: require('../images/members/akshata.jpeg') },
   { name: "Alisha", role: "Core Member",  photo: require('../images/members/alisha.jpeg') },
 
+  // 2024 - 2028 Batch
   { name: "Anshuman", role: "Core Member",  photo: require('../images/members/anshuman.jpg') },
-  { name: "Arpan", role: "Core Member",  photo: require('../images/members/Arpan.jpeg') },
-  { name: "Kamal", role: "Core Member",  photo: require('../images/members/Kamal.jpg') },
+  { name: "Arpan", role: "Event Head",  photo: require('../images/members/Arpan.jpeg') },
+  { name: "Kamal", role: "Project Head",  photo: require('../images/members/Kamal.jpg') },
   { name: "Tanisha", role: "Core Member",  photo: require('../images/members/Tanisha.jpeg') },
   { name: "Karishma", role: "Core Member",  photo: require('../images/members/Karishma.jpeg') },
   { name: "Rabi", role: "Core Member",  photo: require('../images/members/Rabi.jpeg') },
   { name: "Rashmi", role: "Core Member",  photo: require('../images/members/Rashmi.jpeg') },
-  { name: "Sailaja", role: "Core Member",  photo: require('../images/members/sailaja.jpeg') },
-  { name: "Sambit", role: "Core Member",  photo: require('../images/members/Sambit.jpeg') },
+  { name: "Sailaja", role: "Treasurer",  photo: require('../images/members/sailaja.jpeg') },
+  { name: "Sambit", role: "Secretary",  photo: require('../images/members/Sambit.jpeg') },
   { name: "Sanchita", role: "Core Member",  photo: require('../images/members/Sanchita.jpeg') },
   { name: "Smruti Ranjan", role: "Core Member",  photo: require('../images/members/Smruti Ranjan.jpeg') },
   
   
+  // 2025 - 2029 Batch
+  { name: "Aditya", role: "Core Member", photo: require('../images/members/Aditya.jpg') },
+  { name: "Adnan", role: "Core Member", photo: require('../images/members/Adnan.jpg') },
+  { name: "Ashish", role: "Core Member", photo: require('../images/members/Ashish.jpg') },
+  { name: "Badal", role: "Core Member", photo: require('../images/members/Badal.jpg') },
+  { name: "Bhumika", role: "Core Member", photo: require('../images/members/Bhumika.jpg') },
+  { name: "Hruiday", role: "Core Member", photo: require('../images/members/Hruiday.jpg') },
+  { name: "Ipsita", role: "Core Member", photo: require('../images/members/Ipsita.jpg') },
+  { name: "Kuldeep", role: "Core Member", photo: require('../images/members/Kuldeep.jpg') },
+  { name: "Piyush", role: "Core Member", photo: require('../images/members/Piyush.jpg') },
+  { name: "Prajakta", role: "Core Member", photo: require('../images/members/Prajakta.jpg') },
+  { name: "Pratyush", role: "Core Member", photo: require('../images/members/Pratyush.jpg') },
+  { name: "Rudra", role: "Core Member", photo: require('../images/members/Rudra.jpg') },
+  { name: "Sankar", role: "Core Member", photo: require('../images/members/Sankar.jpg') },
+  { name: "Shreya", role: "Core Member", photo: require('../images/members/Shreya.jpg') },
+  { name: "Subhankar", role: "Core Member", photo: require('../images/members/Subhankar.jpg') },
+  { name: "Subhalaxmi", role: "Core Member", photo: require('../images/members/Subhalaxmi.jpg') },
+
 ];
 
 export const alumni = [
